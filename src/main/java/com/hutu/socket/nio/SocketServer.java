@@ -20,6 +20,7 @@ public class SocketServer {
         System.out.println("服务端已启动~~~~");
         while (true) {
             // 阻塞方法，等待客户端连接 接收客户端传输过来的数据
+            // accept() → 返回已连接的 Socket
             new Thread(new ServerTask(serverSocket.accept())).start();
         }
     }

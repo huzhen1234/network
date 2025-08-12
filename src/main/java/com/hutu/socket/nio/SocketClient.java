@@ -15,7 +15,7 @@ import java.net.Socket;
  */
 public class SocketClient {
     public static void main(String[] args) throws IOException {
-        // 建立连接
+        // 建立连接 套接字 基于 IP/UTP
         Socket socket = null;
         // 输入输出流
         ObjectInputStream inputStream = null;
