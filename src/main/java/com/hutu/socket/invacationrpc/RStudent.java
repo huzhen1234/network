@@ -1,6 +1,8 @@
 package com.hutu.socket.invacationrpc;
 
-public class RStudent {
+import java.io.Serializable;
+
+public class RStudent implements Serializable {
 
     private String name;
     private Long id;
